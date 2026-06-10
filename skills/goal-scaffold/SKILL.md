@@ -1,6 +1,6 @@
 ---
 name: goal-scaffold
-description: Create reusable feature-goal planning scaffolds for Codex goal sessions. Use when the user wants to turn a feature, investigation, benchmark, refactor, reproduction effort, or other uncertain multi-step task into local Markdown planning docs before manually launching `/goal`; especially when they mention goal_template.md, implementation_todo, implementation_history, adversarial validation prompts, quantitative gates, blockers, or docs/feature_history.
+description: "Create reusable feature-goal planning scaffolds for Codex goal sessions. Use when the user wants to turn a feature, investigation, benchmark, refactor, reproduction effort, or other uncertain multi-step task into local Markdown planning docs before manually launching `/goal`; especially when they mention goal_template.md, implementation_todo, implementation_history, adversarial validation prompts, quantitative gates, blockers, or docs/feature_history."
 ---
 
 # Goal Scaffold
