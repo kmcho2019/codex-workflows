@@ -1,0 +1,4 @@
+interface:
+  display_name: "Goal Scaffold"
+  short_description: "Create feature goal planning docs"
+  default_prompt: "Use $goal-scaffold to create goal docs for this feature: <describe the outcome, blockers, validation gates, and constraints>."
