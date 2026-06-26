@@ -10,14 +10,19 @@ server or container can install them with symlinks instead of manual copying.
 ```text
 codex-workflows/
   skills/
+    autoreview/
+    grill-me/
+    handoff/
     goal-scaffold/
       SKILL.md
       agents/openai.yaml
       references/
       scripts/
+    teach/
   agents/
     AGENTS.md
     GUIDELINES.md
+  third_party_licenses/
   install.sh
 ```
 
@@ -54,7 +59,24 @@ restart the Codex session.
 
 | Skill | Purpose |
 | --- | --- |
+| `autoreview` | Run a structured pre-commit or pre-ship code review helper |
 | `goal-scaffold` | Create feature-goal planning docs under `docs/feature_history/<KST timestamp>_<slug>/` before manually launching `/goal` |
+| `grill-me` | Stress-test a plan or design with one-question-at-a-time interrogation |
+| `handoff` | Write a temporary handoff document so another agent can continue the work |
+| `teach` | Build a stateful teaching workspace with lessons, references, resources, and learning records |
+
+## Attribution
+
+Some skills are copied or adapted from other MIT-licensed skill collections.
+License texts are kept in `third_party_licenses/`.
+
+| Skills | Source | Imported from | License |
+| --- | --- | --- | --- |
+| `grill-me`, `handoff`, `teach` | https://github.com/mattpocock/skills | commit `5d78bd0` | MIT, see `third_party_licenses/mattpocock-skills-MIT.txt` |
+| `autoreview` | https://github.com/openclaw/agent-skills | commit `283f069` | MIT, see `third_party_licenses/openclaw-agent-skills-MIT.txt` |
+
+`grill-me` is self-contained here and is adapted from the upstream
+`grill-me` alias plus the upstream `grilling` skill instructions.
 
 ## Rules
 

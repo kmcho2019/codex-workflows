@@ -1,0 +1,4 @@
+interface:
+  display_name: "Auto Review"
+  short_description: "Run structured code reviews"
+  default_prompt: "Use $autoreview to review my current branch before I ship it."
