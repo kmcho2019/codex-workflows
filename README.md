@@ -63,6 +63,7 @@ restart the Codex session.
 | `goal-scaffold` | Create feature-goal planning docs under `docs/feature_history/<KST timestamp>_<slug>/` before manually launching `/goal` |
 | `grill-me` | Stress-test a plan or design with one-question-at-a-time interrogation |
 | `handoff` | Write a temporary handoff document so another agent can continue the work |
+| `review-bundle` | Package curated repository context for an external second opinion |
 | `teach` | Build a stateful teaching workspace with lessons, references, resources, and learning records |
 
 ## Attribution

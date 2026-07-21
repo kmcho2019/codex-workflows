@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Bundle"
+  short_description: "Package context for an external review"
+  default_prompt: "Use $review-bundle to prepare a curated review package for this request."
