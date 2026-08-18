@@ -61,7 +61,7 @@ restart the Codex session.
 | --- | --- |
 | `autoreview` | Run a structured pre-commit or pre-ship code review helper |
 | `goal-scaffold` | Create feature-goal planning docs under `docs/feature_history/<KST timestamp>_<slug>/` before manually launching `/goal` |
-| `grill-me` | Stress-test a plan or design with one-question-at-a-time interrogation |
+| `grill-me` | Stress-test a plan, decision, or idea with a round-by-round frontier interview |
 | `handoff` | Write a temporary handoff document so another agent can continue the work |
 | `review-bundle` | Package curated repository context for an external second opinion |
 | `teach` | Build a stateful teaching workspace with lessons, references, resources, and learning records |
@@ -73,7 +73,8 @@ License texts are kept in `third_party_licenses/`.
 
 | Skills | Source | Imported from | License |
 | --- | --- | --- | --- |
-| `grill-me`, `handoff`, `teach` | https://github.com/mattpocock/skills | commit `5d78bd0` | MIT, see `third_party_licenses/mattpocock-skills-MIT.txt` |
+| `grill-me` | https://github.com/mattpocock/skills | commit `9c9f36c` | MIT, see `third_party_licenses/mattpocock-skills-MIT.txt` |
+| `handoff`, `teach` | https://github.com/mattpocock/skills | commit `5d78bd0` | MIT, see `third_party_licenses/mattpocock-skills-MIT.txt` |
 | `autoreview` | https://github.com/openclaw/agent-skills | commit `283f069` | MIT, see `third_party_licenses/openclaw-agent-skills-MIT.txt` |
 
 `grill-me` is self-contained here and is adapted from the upstream
