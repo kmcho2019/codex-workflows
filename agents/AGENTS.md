@@ -13,6 +13,11 @@ Follow these guidance while implementing steps:
 12. use asserts instead of try catches or default values when you do expect something to exist
 13. never pass overrides except strictly necessary, keep argument count low
 14. don't make arguments optional if they are actually required
+15. Do not introduce one/two-time use variables, prefer inlining
+16. Declare things as close as possible to their site of first use
+
+Documentation guidance:
+Use concise, ASD-STE100-inspired plain technical language in user docs, docstrings, and comments. Regularly fix unclear, outdated, or missing documentation before it becomes documentation debt.
 
 Commit guidance:
 ## 1. The "Golden Seven" Rules
