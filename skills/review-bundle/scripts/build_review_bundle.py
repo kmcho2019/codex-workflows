@@ -390,8 +390,10 @@ copy of the repository.
 
 {directories}
 
-The manifest indexes every payload file except itself. Paths in the manifest
-are repository-relative and do not expose the source machine's absolute path.
+The manifest indexes every payload file except itself. `path` values are
+bundle-relative. Non-null `source` values are repository-relative. Copied
+Markdown keeps its original relative links; use the manifest when a link does
+not resolve inside this curated layout.
 """
 
 
