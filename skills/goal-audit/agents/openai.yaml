@@ -1,0 +1,4 @@
+interface:
+  display_name: "Goal Audit"
+  short_description: "Measure goal progress from repository evidence"
+  default_prompt: "Use $goal-audit to audit this goal against the repository evidence."

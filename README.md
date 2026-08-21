@@ -59,7 +59,9 @@ restart the Codex session.
 
 | Skill | Purpose |
 | --- | --- |
+| `adversarial-validate` | Test code, docs, claims, or visuals against explicit acceptance evidence |
 | `autoreview` | Run a structured pre-commit or pre-ship code review helper |
+| `goal-audit` | Measure an active goal against repository evidence and identify the next priority |
 | `goal-scaffold` | Create feature-goal planning docs under `docs/feature_history/<KST timestamp>_<slug>/` before manually launching `/goal` |
 | `grill-me` | Stress-test a plan, decision, or idea with a round-by-round frontier interview |
 | `handoff` | Write a temporary handoff document so another agent can continue the work |

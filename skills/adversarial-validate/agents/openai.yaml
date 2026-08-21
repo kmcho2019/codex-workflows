@@ -1,0 +1,4 @@
+interface:
+  display_name: "Adversarial Validate"
+  short_description: "Test artifacts against explicit acceptance evidence"
+  default_prompt: "Use $adversarial-validate to test this artifact against its acceptance contract."
