@@ -1,0 +1,4 @@
+interface:
+  display_name: "Publication Figures"
+  short_description: "Create polished, publication-ready figures"
+  default_prompt: "Use $publication-figures to create or refine this figure for a paper or professional report."

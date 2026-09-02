@@ -13,6 +13,7 @@ codex-workflows/
     autoreview/
     grill-me/
     handoff/
+    publication-figures/
     goal-scaffold/
       SKILL.md
       agents/openai.yaml
@@ -65,6 +66,7 @@ restart the Codex session.
 | `goal-scaffold` | Create feature-goal planning docs under `docs/feature_history/<KST timestamp>_<slug>/` before manually launching `/goal` |
 | `grill-me` | Stress-test a plan, decision, or idea with a round-by-round frontier interview |
 | `handoff` | Write a temporary handoff document so another agent can continue the work |
+| `publication-figures` | Create polished, accessible, and reproducible figures for papers and professional reports |
 | `review-bundle` | Package curated repository context for an external second opinion |
 | `teach` | Build a stateful teaching workspace with lessons, references, resources, and learning records |
 
@@ -78,6 +80,7 @@ License texts are kept in `third_party_licenses/`.
 | `grill-me` | https://github.com/mattpocock/skills | commit `9c9f36c` | MIT, see `third_party_licenses/mattpocock-skills-MIT.txt` |
 | `handoff`, `teach` | https://github.com/mattpocock/skills | commit `5d78bd0` | MIT, see `third_party_licenses/mattpocock-skills-MIT.txt` |
 | `autoreview` | https://github.com/openclaw/agent-skills | commit `283f069` | MIT, see `third_party_licenses/openclaw-agent-skills-MIT.txt` |
+| `publication-figures` | https://github.com/alphaXiv/OpenResearch/tree/86d9be4bd2f771b7bbfda068d43468fe3e88a24a/agent-skills/orx-figures | commit `86d9be4` | MIT, see `third_party_licenses/alphaxiv-openresearch-MIT.txt` |
 
 `grill-me` is self-contained here and is adapted from the upstream
 `grill-me` alias plus the upstream `grilling` skill instructions.
