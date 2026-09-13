@@ -37,12 +37,15 @@ bash install.sh
 
 The installer symlinks:
 
-- `skills/*` into `~/.codex/skills/`
-- `skills/*` into `~/.agents/skills/`
+- Active skills from `skills/*` into `~/.codex/skills/`
+- Active skills from `skills/*` into `~/.agents/skills/`
 - `agents/AGENTS.md` into `~/.codex/AGENTS.md`
 - `agents/GUIDELINES.md` into `~/.codex/GUIDELINES.md`
 
 Both skill locations are installed for portability across Codex setups.
+`autoreview` is disabled for now: installation skips it and removes its symlinks
+when they point to this checkout. Its source remains in `skills/autoreview/`;
+remove the autoreview exclusion in `install.sh` and rerun it to re-enable.
 Existing non-symlink targets are moved aside with a timestamped
 `.backup.YYYYMMDD_HHMMSS` suffix before the symlink is created.
 
@@ -61,14 +64,14 @@ restart the Codex session.
 | Skill | Purpose |
 | --- | --- |
 | `adversarial-validate` | Test code, docs, claims, or visuals against explicit acceptance evidence |
-| `autoreview` | Run a structured pre-commit or pre-ship code review helper |
+| `autoreview` (disabled) | Retained pre-commit or pre-ship code review helper |
 | `goal-audit` | Measure an active goal against repository evidence and identify the next priority |
 | `goal-scaffold` | Create feature-goal planning docs under `docs/feature_history/<KST timestamp>_<slug>/` before manually launching `/goal` |
-| `grill-me` | Stress-test a plan, decision, or idea with a round-by-round frontier interview |
+| `grill-me` | Stress-test a plan, decision, or idea through focused rounds of questions |
 | `handoff` | Write a temporary handoff document so another agent can continue the work |
 | `publication-figures` | Create polished, accessible, and reproducible figures for papers and professional reports |
 | `review-bundle` | Package curated repository context for an external second opinion |
-| `teach` | Build a stateful teaching workspace with lessons, references, resources, and learning records |
+| `teach` | Teach focused lessons and practice, with an ongoing workspace when requested |
 
 ## Attribution
 
@@ -89,7 +92,8 @@ License texts are kept in `third_party_licenses/`.
 
 - Do not store secrets, API keys, license keys, private datasets, or model
   weights here.
-- Keep skills small and procedural.
+- Keep skill triggers precise and instructions focused on outcomes.
+- Following [GPT-6 Astra skill guidance](https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra), load workflow-specific references only when needed.
 - Put reusable scripts inside the relevant skill's `scripts/` directory.
 - Put longer workflow references inside the relevant skill's `references/`
   directory.

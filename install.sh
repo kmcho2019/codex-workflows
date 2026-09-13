@@ -22,6 +22,15 @@ link_path() {
 for skill in "$REPO"/skills/*; do
   [ -d "$skill" ] || continue
   name="$(basename "$skill")"
+  # Keep autoreview in source, but disable its installed discovery links.
+  if [ "$name" = autoreview ]; then
+    for target in "$HOME/.codex/skills/$name" "$HOME/.agents/skills/$name" "$HOME/.claude/skills/$name"; do
+      if [ -L "$target" ] && [ "$(readlink "$target")" = "$skill" ]; then
+        rm "$target"
+      fi
+    done
+    continue
+  fi
   link_path "$skill" "$HOME/.codex/skills/$name"
   link_path "$skill" "$HOME/.agents/skills/$name"
 done

@@ -1,14 +1,21 @@
 ---
 name: handoff
-description: Compact the current conversation into a handoff document for another agent to pick up.
+description: Write a handoff document when the user wants another agent or session to continue the work.
 ---
 
-Write a handoff document summarising the current conversation so a fresh agent can continue the work. Save to the temporary directory of the user's OS - not the current workspace.
+Save a concise handoff in the operating system's temporary directory unless
+the user specifies a destination. A fresh agent should be able to resume the
+requested work without reconstructing the conversation.
 
-Include a "suggested skills" section in the document, which suggests skills that the agent should invoke.
+Capture the current objective, user constraints and authorizations, completed
+work, relevant validation results, unresolved blockers, and concrete next steps.
+Distinguish verified facts from assumptions and proposed actions. Include the
+workspace, branch, and uncommitted work when relevant to resuming safely.
 
-Do not duplicate content already captured in other artifacts (PRDs, plans, ADRs, issues, commits, diffs). Reference them by path or URL instead.
+Link existing plans, issues, commits, diffs, and other artifacts by path or URL
+instead of copying their contents. Include any essential context that exists
+only in this conversation. Suggest skills only when they would help the next
+task, and omit credentials and unnecessary personal information.
 
-Redact any sensitive information, such as API keys, passwords, or personally identifiable information.
-
-If the user describes what the next session will focus on, tailor the doc accordingly.
+Tailor the document to the user's stated next-session focus. Finish by giving
+the user the saved file's path.
