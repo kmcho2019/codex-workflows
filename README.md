@@ -39,10 +39,11 @@ The installer symlinks:
 
 - Active skills from `skills/*` into `~/.codex/skills/`
 - Active skills from `skills/*` into `~/.agents/skills/`
+- Active skills from `skills/*` into `~/.claude/skills/`
 - `agents/AGENTS.md` into `~/.codex/AGENTS.md`
 - `agents/GUIDELINES.md` into `~/.codex/GUIDELINES.md`
 
-Both skill locations are installed for portability across Codex setups.
+All three skill locations are installed for portability across agent setups.
 `autoreview` is disabled for now: installation skips it and removes its symlinks
 when they point to this checkout. Its source remains in `skills/autoreview/`;
 remove the autoreview exclusion in `install.sh` and rerun it to re-enable.

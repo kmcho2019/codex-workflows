@@ -5,6 +5,7 @@ REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 BACKUP_SUFFIX="backup.$(date +%Y%m%d_%H%M%S)"
 
 mkdir -p "$HOME/.codex/skills"
+mkdir -p "$HOME/.claude/skills"
 mkdir -p "$HOME/.agents/skills"
 mkdir -p "$HOME/.codex"
 
@@ -33,6 +34,7 @@ for skill in "$REPO"/skills/*; do
   fi
   link_path "$skill" "$HOME/.codex/skills/$name"
   link_path "$skill" "$HOME/.agents/skills/$name"
+  link_path "$skill" "$HOME/.claude/skills/$name"
 done
 
 link_path "$REPO/agents/AGENTS.md" "$HOME/.codex/AGENTS.md"
